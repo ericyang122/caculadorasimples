@@ -7,14 +7,14 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <ion-item>
+    <ion-input label="Floating label" [(ngModel)]="n1"  labelPlacement="floating" placeholder="Enter text"></ion-input>
+  </ion-item>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+  <ion-item>
+    <ion-input label="Floating label" [(ngModel)]="n2" labelPlacement="floating" placeholder="Enter text"></ion-input>
+
+    <ion-button expand="block" (click)="somar()">somar</ion-button>
+    <ion-label>{{res}}</ion-label>
+  </ion-item>
 </ion-content>

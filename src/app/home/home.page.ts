@@ -8,5 +8,14 @@ import { Component } from '@angular/core';
 export class HomePage {
 
   constructor() {}
+  n1=''
+  n2=''
+  res=0;
+  somar(){
+    this.res = parseFloat(this.n1)+parseFloat(this.n2);
+
+  }
+
+
 
 }
